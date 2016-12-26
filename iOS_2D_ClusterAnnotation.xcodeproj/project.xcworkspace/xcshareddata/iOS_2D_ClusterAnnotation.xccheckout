@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2DF148D9-B06D-45FB-B73D-BA2B7598567B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS_2D_ClusterAnnotation</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40D34D83-3BA4-48F1-82A6-4AD60A0A555B</key>
+		<string>http://git.oschina.net/tofuball/ClusterAnnotation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS_2D_ClusterAnnotation.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40D34D83-3BA4-48F1-82A6-4AD60A0A555B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://git.oschina.net/tofuball/ClusterAnnotation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40D34D83-3BA4-48F1-82A6-4AD60A0A555B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40D34D83-3BA4-48F1-82A6-4AD60A0A555B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ClusterAnnotation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

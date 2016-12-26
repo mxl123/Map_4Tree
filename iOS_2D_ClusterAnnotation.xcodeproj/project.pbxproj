@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C81D4FEE196D53AF00099DAC /* ClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FE6196D53AF00099DAC /* ClusterAnnotation.m */; };
+		C81D4FEF196D53AF00099DAC /* CoordinateQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FE8196D53AF00099DAC /* CoordinateQuadTree.m */; };
+		C81D4FF0196D53AF00099DAC /* QuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FEA196D53AF00099DAC /* QuadTree.m */; };
+		C81D4FF1196D53AF00099DAC /* ClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FED196D53AF00099DAC /* ClusterAnnotationView.m */; };
+		C81D4FFA196D53C500099DAC /* AnnotationClusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FF5196D53C500099DAC /* AnnotationClusterViewController.m */; };
+		C81D4FFB196D53C500099DAC /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FF7196D53C500099DAC /* BaseMapViewController.m */; };
+		C81D4FFC196D53C500099DAC /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C81D4FF9196D53C500099DAC /* PoiDetailViewController.m */; };
+		C84710B9196B96DC00ED0DD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84710B8196B96DC00ED0DD7 /* Foundation.framework */; };
+		C84710BB196B96DC00ED0DD7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84710BA196B96DC00ED0DD7 /* CoreGraphics.framework */; };
+		C84710BD196B96DC00ED0DD7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84710BC196B96DC00ED0DD7 /* UIKit.framework */; };
+		C84710C3196B96DC00ED0DD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C84710C1196B96DC00ED0DD7 /* InfoPlist.strings */; };
+		C84710C5196B96DC00ED0DD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C84710C4196B96DC00ED0DD7 /* main.m */; };
+		C84710C9196B96DD00ED0DD7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C84710C8196B96DD00ED0DD7 /* AppDelegate.m */; };
+		C84710CC196B96DD00ED0DD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C84710CA196B96DD00ED0DD7 /* Main.storyboard */; };
+		C84710D1196B96DD00ED0DD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C84710D0196B96DD00ED0DD7 /* Images.xcassets */; };
+		C8471113196BC53900ED0DD7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471112196BC53900ED0DD7 /* CoreLocation.framework */; };
+		C8471115196BC54B00ED0DD7 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471114196BC54B00ED0DD7 /* MAMapKit.framework */; };
+		C8471117196BC55E00ED0DD7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471116196BC55E00ED0DD7 /* CoreTelephony.framework */; };
+		C8471119196BC56800ED0DD7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471118196BC56800ED0DD7 /* SystemConfiguration.framework */; };
+		C847111B196BC57800ED0DD7 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C847111A196BC57800ED0DD7 /* libstdc++.6.0.9.dylib */; };
+		C847111D196BC58800ED0DD7 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C847111C196BC58800ED0DD7 /* libz.1.2.5.dylib */; };
+		C8471136196BC77D00ED0DD7 /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8471135196BC77D00ED0DD7 /* AMapSearchKit.framework */; };
+		C8E81AEB1980ABD50039E7B6 /* ClusterAnnotationCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E81AEA1980ABD50039E7B6 /* ClusterAnnotationCalloutView.m */; };
+		C8E81AED1980AD5F0039E7B6 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8E81AEC1980AD5F0039E7B6 /* AMap.bundle */; };
+		C8F1DB31196D1A2C007BC6EC /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F1DB2E196D1A2C007BC6EC /* icon-40@2x.png */; };
+		C8F1DB32196D1A2C007BC6EC /* icon-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F1DB2F196D1A2C007BC6EC /* icon-29@2x.png */; };
+		C8F1DB33196D1A2C007BC6EC /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F1DB30196D1A2C007BC6EC /* icon-60@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C81D4FE5196D53AF00099DAC /* ClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotation.h; sourceTree = "<group>"; };
+		C81D4FE6196D53AF00099DAC /* ClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotation.m; sourceTree = "<group>"; };
+		C81D4FE7196D53AF00099DAC /* CoordinateQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateQuadTree.h; sourceTree = "<group>"; };
+		C81D4FE8196D53AF00099DAC /* CoordinateQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateQuadTree.m; sourceTree = "<group>"; };
+		C81D4FE9196D53AF00099DAC /* QuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuadTree.h; sourceTree = "<group>"; };
+		C81D4FEA196D53AF00099DAC /* QuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuadTree.m; sourceTree = "<group>"; };
+		C81D4FEC196D53AF00099DAC /* ClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationView.h; sourceTree = "<group>"; };
+		C81D4FED196D53AF00099DAC /* ClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationView.m; sourceTree = "<group>"; };
+		C81D4FF4196D53C500099DAC /* AnnotationClusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationClusterViewController.h; sourceTree = "<group>"; };
+		C81D4FF5196D53C500099DAC /* AnnotationClusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationClusterViewController.m; sourceTree = "<group>"; };
+		C81D4FF6196D53C500099DAC /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
+		C81D4FF7196D53C500099DAC /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapViewController.m; sourceTree = "<group>"; };
+		C81D4FF8196D53C500099DAC /* PoiDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailViewController.h; sourceTree = "<group>"; };
+		C81D4FF9196D53C500099DAC /* PoiDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailViewController.m; sourceTree = "<group>"; };
+		C81D5043196E3E4800099DAC /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
+		C84710B5196B96DC00ED0DD7 /* ClusterAnnotationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClusterAnnotationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C84710B8196B96DC00ED0DD7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C84710BA196B96DC00ED0DD7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C84710BC196B96DC00ED0DD7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C84710C0196B96DC00ED0DD7 /* iOS_2D_ClusterAnnotation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS_2D_ClusterAnnotation-Info.plist"; sourceTree = "<group>"; };
+		C84710C2196B96DC00ED0DD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C84710C4196B96DC00ED0DD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C84710C6196B96DC00ED0DD7 /* iOS_2D_ClusterAnnotation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS_2D_ClusterAnnotation-Prefix.pch"; sourceTree = "<group>"; };
+		C84710C7196B96DD00ED0DD7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C84710C8196B96DD00ED0DD7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C84710CB196B96DD00ED0DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C84710D0196B96DD00ED0DD7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C84710D7196B96DD00ED0DD7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C8471112196BC53900ED0DD7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C8471114196BC54B00ED0DD7 /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MAMapKit.framework; path = iOS_2D_ClusterAnnotation/extern/MAMapKit.framework; sourceTree = "<group>"; };
+		C8471116196BC55E00ED0DD7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C8471118196BC56800ED0DD7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C847111A196BC57800ED0DD7 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		C847111C196BC58800ED0DD7 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		C8471135196BC77D00ED0DD7 /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AMapSearchKit.framework; path = iOS_2D_ClusterAnnotation/extern/AMapSearchKit.framework; sourceTree = "<group>"; };
+		C8E81AE91980ABD50039E7B6 /* ClusterAnnotationCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusterAnnotationCalloutView.h; sourceTree = "<group>"; };
+		C8E81AEA1980ABD50039E7B6 /* ClusterAnnotationCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusterAnnotationCalloutView.m; sourceTree = "<group>"; };
+		C8E81AEC1980AD5F0039E7B6 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AMap.bundle; path = iOS_2D_ClusterAnnotation/extern/MAMapKit.framework/Versions/2.2.0.1512/Resources/AMap.bundle; sourceTree = "<group>"; };
+		C8F1DB2E196D1A2C007BC6EC /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-40@2x.png"; path = "Resources/icon-40@2x.png"; sourceTree = "<group>"; };
+		C8F1DB2F196D1A2C007BC6EC /* icon-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-29@2x.png"; path = "Resources/icon-29@2x.png"; sourceTree = "<group>"; };
+		C8F1DB30196D1A2C007BC6EC /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-60@2x.png"; path = "Resources/icon-60@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C84710B2196B96DC00ED0DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C847111D196BC58800ED0DD7 /* libz.1.2.5.dylib in Frameworks */,
+				C847111B196BC57800ED0DD7 /* libstdc++.6.0.9.dylib in Frameworks */,
+				C8471119196BC56800ED0DD7 /* SystemConfiguration.framework in Frameworks */,
+				C8471117196BC55E00ED0DD7 /* CoreTelephony.framework in Frameworks */,
+				C8471115196BC54B00ED0DD7 /* MAMapKit.framework in Frameworks */,
+				C8471136196BC77D00ED0DD7 /* AMapSearchKit.framework in Frameworks */,
+				C8471113196BC53900ED0DD7 /* CoreLocation.framework in Frameworks */,
+				C84710BB196B96DC00ED0DD7 /* CoreGraphics.framework in Frameworks */,
+				C84710BD196B96DC00ED0DD7 /* UIKit.framework in Frameworks */,
+				C84710B9196B96DC00ED0DD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C81D4FE3196D52EA00099DAC /* ClusterAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FE4196D53AF00099DAC /* Model */,
+				C81D4FEB196D53AF00099DAC /* View */,
+			);
+			name = ClusterAnnotation;
+			sourceTree = "<group>";
+		};
+		C81D4FE4196D53AF00099DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FE5196D53AF00099DAC /* ClusterAnnotation.h */,
+				C81D4FE6196D53AF00099DAC /* ClusterAnnotation.m */,
+				C81D4FE7196D53AF00099DAC /* CoordinateQuadTree.h */,
+				C81D4FE8196D53AF00099DAC /* CoordinateQuadTree.m */,
+				C81D4FE9196D53AF00099DAC /* QuadTree.h */,
+				C81D4FEA196D53AF00099DAC /* QuadTree.m */,
+			);
+			name = Model;
+			path = ClusterAnnotation/Model;
+			sourceTree = "<group>";
+		};
+		C81D4FEB196D53AF00099DAC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8E81AE91980ABD50039E7B6 /* ClusterAnnotationCalloutView.h */,
+				C8E81AEA1980ABD50039E7B6 /* ClusterAnnotationCalloutView.m */,
+				C81D4FEC196D53AF00099DAC /* ClusterAnnotationView.h */,
+				C81D4FED196D53AF00099DAC /* ClusterAnnotationView.m */,
+			);
+			name = View;
+			path = ClusterAnnotation/View;
+			sourceTree = "<group>";
+		};
+		C81D4FF2196D53C500099DAC /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FF3196D53C500099DAC /* Controller */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		C81D4FF3196D53C500099DAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FF4196D53C500099DAC /* AnnotationClusterViewController.h */,
+				C81D4FF5196D53C500099DAC /* AnnotationClusterViewController.m */,
+				C81D4FF6196D53C500099DAC /* BaseMapViewController.h */,
+				C81D4FF7196D53C500099DAC /* BaseMapViewController.m */,
+				C81D4FF8196D53C500099DAC /* PoiDetailViewController.h */,
+				C81D4FF9196D53C500099DAC /* PoiDetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C84710AC196B96DC00ED0DD7 = {
+			isa = PBXGroup;
+			children = (
+				C8E81AEC1980AD5F0039E7B6 /* AMap.bundle */,
+				C84710BE196B96DC00ED0DD7 /* iOS_2D_ClusterAnnotation */,
+				C84710B7196B96DC00ED0DD7 /* Frameworks */,
+				C84710B6196B96DC00ED0DD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C84710B6196B96DC00ED0DD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C84710B5196B96DC00ED0DD7 /* ClusterAnnotationDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C84710B7196B96DC00ED0DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8471135196BC77D00ED0DD7 /* AMapSearchKit.framework */,
+				C847111C196BC58800ED0DD7 /* libz.1.2.5.dylib */,
+				C847111A196BC57800ED0DD7 /* libstdc++.6.0.9.dylib */,
+				C8471118196BC56800ED0DD7 /* SystemConfiguration.framework */,
+				C8471116196BC55E00ED0DD7 /* CoreTelephony.framework */,
+				C8471114196BC54B00ED0DD7 /* MAMapKit.framework */,
+				C8471112196BC53900ED0DD7 /* CoreLocation.framework */,
+				C84710B8196B96DC00ED0DD7 /* Foundation.framework */,
+				C84710BA196B96DC00ED0DD7 /* CoreGraphics.framework */,
+				C84710BC196B96DC00ED0DD7 /* UIKit.framework */,
+				C84710D7196B96DD00ED0DD7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84710BE196B96DC00ED0DD7 /* iOS_2D_ClusterAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				C81D4FE3196D52EA00099DAC /* ClusterAnnotation */,
+				C81D4FF2196D53C500099DAC /* Demo */,
+				C8471123196BC70500ED0DD7 /* Configuration */,
+				C84710C7196B96DD00ED0DD7 /* AppDelegate.h */,
+				C84710C8196B96DD00ED0DD7 /* AppDelegate.m */,
+				C84710CA196B96DD00ED0DD7 /* Main.storyboard */,
+				C84710D0196B96DD00ED0DD7 /* Images.xcassets */,
+				C84710BF196B96DC00ED0DD7 /* Supporting Files */,
+			);
+			path = iOS_2D_ClusterAnnotation;
+			sourceTree = "<group>";
+		};
+		C84710BF196B96DC00ED0DD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8F1DB2E196D1A2C007BC6EC /* icon-40@2x.png */,
+				C8F1DB2F196D1A2C007BC6EC /* icon-29@2x.png */,
+				C8F1DB30196D1A2C007BC6EC /* icon-60@2x.png */,
+				C84710C0196B96DC00ED0DD7 /* iOS_2D_ClusterAnnotation-Info.plist */,
+				C84710C1196B96DC00ED0DD7 /* InfoPlist.strings */,
+				C84710C4196B96DC00ED0DD7 /* main.m */,
+				C84710C6196B96DC00ED0DD7 /* iOS_2D_ClusterAnnotation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8471123196BC70500ED0DD7 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C81D5043196E3E4800099DAC /* APIKey.h */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C84710B4196B96DC00ED0DD7 /* ClusterAnnotationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C84710E7196B96DD00ED0DD7 /* Build configuration list for PBXNativeTarget "ClusterAnnotationDemo" */;
+			buildPhases = (
+				C84710B1196B96DC00ED0DD7 /* Sources */,
+				C84710B2196B96DC00ED0DD7 /* Frameworks */,
+				C84710B3196B96DC00ED0DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClusterAnnotationDemo;
+			productName = iOS_2D_ClusterAnnotation;
+			productReference = C84710B5196B96DC00ED0DD7 /* ClusterAnnotationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C84710AD196B96DC00ED0DD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "yi chen";
+				TargetAttributes = {
+					C84710B4196B96DC00ED0DD7 = {
+						DevelopmentTeam = G6NXXX8882;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C84710B0196B96DC00ED0DD7 /* Build configuration list for PBXProject "iOS_2D_ClusterAnnotation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C84710AC196B96DC00ED0DD7;
+			productRefGroup = C84710B6196B96DC00ED0DD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C84710B4196B96DC00ED0DD7 /* ClusterAnnotationDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C84710B3196B96DC00ED0DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E81AED1980AD5F0039E7B6 /* AMap.bundle in Resources */,
+				C8F1DB32196D1A2C007BC6EC /* icon-29@2x.png in Resources */,
+				C8F1DB33196D1A2C007BC6EC /* icon-60@2x.png in Resources */,
+				C84710D1196B96DD00ED0DD7 /* Images.xcassets in Resources */,
+				C84710C3196B96DC00ED0DD7 /* InfoPlist.strings in Resources */,
+				C84710CC196B96DD00ED0DD7 /* Main.storyboard in Resources */,
+				C8F1DB31196D1A2C007BC6EC /* icon-40@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C84710B1196B96DC00ED0DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C81D4FF0196D53AF00099DAC /* QuadTree.m in Sources */,
+				C84710C9196B96DD00ED0DD7 /* AppDelegate.m in Sources */,
+				C81D4FFB196D53C500099DAC /* BaseMapViewController.m in Sources */,
+				C8E81AEB1980ABD50039E7B6 /* ClusterAnnotationCalloutView.m in Sources */,
+				C81D4FEF196D53AF00099DAC /* CoordinateQuadTree.m in Sources */,
+				C81D4FFC196D53C500099DAC /* PoiDetailViewController.m in Sources */,
+				C81D4FFA196D53C500099DAC /* AnnotationClusterViewController.m in Sources */,
+				C81D4FF1196D53AF00099DAC /* ClusterAnnotationView.m in Sources */,
+				C84710C5196B96DC00ED0DD7 /* main.m in Sources */,
+				C81D4FEE196D53AF00099DAC /* ClusterAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C84710C1196B96DC00ED0DD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84710C2196B96DC00ED0DD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C84710CA196B96DD00ED0DD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C84710CB196B96DD00ED0DD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C84710E5196B96DD00ED0DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C84710E6196B96DD00ED0DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C84710E8196B96DD00ED0DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G6NXXX8882;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS_2D_ClusterAnnotation/extern",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS_2D_ClusterAnnotation/iOS_2D_ClusterAnnotation-Prefix.pch";
+				INFOPLIST_FILE = "iOS_2D_ClusterAnnotation/iOS_2D_ClusterAnnotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C84710E9196B96DD00ED0DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G6NXXX8882;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS_2D_ClusterAnnotation/extern",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS_2D_ClusterAnnotation/iOS_2D_ClusterAnnotation-Prefix.pch";
+				INFOPLIST_FILE = "iOS_2D_ClusterAnnotation/iOS_2D_ClusterAnnotation-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C84710B0196B96DC00ED0DD7 /* Build configuration list for PBXProject "iOS_2D_ClusterAnnotation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84710E5196B96DD00ED0DD7 /* Debug */,
+				C84710E6196B96DD00ED0DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C84710E7196B96DD00ED0DD7 /* Build configuration list for PBXNativeTarget "ClusterAnnotationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C84710E8196B96DD00ED0DD7 /* Debug */,
+				C84710E9196B96DD00ED0DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C84710AD196B96DC00ED0DD7 /* Project object */;
+}
