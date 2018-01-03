@@ -132,10 +132,3 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 ### 截图效果
 
 ![ClusterAnnotation2](https://git.oschina.net/tofuball/ClusterAnnotation/raw/master/ClusterAnnotationDemoShowGif.gif)
-### 在线安装Demo
-
-* `手机扫描如下二维码直接安装`
-
-![qrcode](https://git.oschina.net/tofuball/ClusterAnnotation/raw/master/qrcode.png)
-
-* `手机上打开地址:<http://fir.im/cademo>`
